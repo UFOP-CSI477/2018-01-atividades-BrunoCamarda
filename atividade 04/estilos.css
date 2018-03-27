@@ -1,0 +1,85 @@
+	
+		h1 { 
+			color: red;
+			font-family: arial;
+			font-size: 20pt;
+		}
+
+		p {
+			font-family: tahoma; 
+			text-align: justify;
+			font-size: 12pt;
+			margin-left: 10pt;
+			margin-right: 10pt;
+			margin-bottom: 30pt;
+		}
+
+		/* criação de seletor individual, a tag em questão deve chamar ela com o atributo class */
+		h2.info {
+			color: blue;
+			text-align: center;
+			border: 2px solid black;
+		}
+
+		/* classe genérica, pode ser usada por qualquer tag, ao contrário da anterior, que só pode pela h2 */
+		.dest { 
+			font-size: 14pt;
+			background-color: #a3c599;
+			font-family: tahoma;
+			font-weight: bold;
+		}
+
+		/* classe usada no atributo id, ao inves de class */
+		#codigo { 
+			border-color: #c6c6c6;
+			color: blue;
+			border-style: solid;
+			border-radius: 15px;
+		 }
+
+		input { 
+			padding: 0.2em;
+    		border: 1px solid #CCC;
+    		box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    		display: block;
+		 }
+
+		a:link {
+    		color: red;
+		}
+
+		a:visited {
+		    color: green;
+		}
+
+		a:hover {
+		    color: hotpink;
+		}
+
+
+		a:active {
+		    color: blue;
+		}
+
+		table.destaque {
+		    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td.destaque, th.destaque {
+		    border: 1px solid #ddd;
+		    padding: 8px;
+		}
+
+		tr.destaque:nth-child(even){background-color: #f2f2f2;}
+
+		tr.destaque:hover {background-color: #ddd;}
+
+		th.destaque {
+		    padding-top: 12px;
+		    padding-bottom: 12px;
+		    text-align: left;
+		    background-color: #4CAF50;
+		    color: white;
+		}

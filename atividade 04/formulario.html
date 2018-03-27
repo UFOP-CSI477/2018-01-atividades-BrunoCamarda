@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Área de Cadastro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<table width="90%">
+	<tr>
+	<!-- a parte 'target="-blank' é para abrir o link em uma nova aba -->
+	<td><img src="imagem/icea.jpg" width="50%"></td>
+	<td align="right"><a href="http://www.ufop.br" target="_blank"> Site da UFOP |</a>
+	<a href="formulario.html">Cadastro |</a>
+	<a href="tabelas.html">Listar |</a>
+	<a href="index.html">Home</a></td>
+	</tr>
+	</table>
+
+	<h1>Cadastro</h1>
+	<!-- metodo get sao chamados direto na URL, dados visíveis. Limitação no tamanho da URL
+		metodo post encapsula isso em dados, não são mostrados, não há limite etc
+		action - submeter atraves de um arquivo, metodo etc-->
+		<form method="post" action="validar.html">
+			<label for=""><h4>Dados Pessoais:</h4></label>
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" placeholder="Nome"><br>
+
+			<label for="cpf">CPF</label>
+			<input type="text" name="cpf" placeholder="999.999.999-9"><br>
+
+			<label for="nasc">Data de Nascimento:</label>
+			<input type="date" name="nasc"><br>
+
+			<label for="genero"><h4>Genero: </h4></label>
+			<input type="radio" name="genero" id="masculino" value="M"> 
+			<label for="masculino">Masculino</label><br>
+			
+			<input type="radio" name="genero" id="feminino" value="F"> 
+			<label for="feminino">Feminino</label><br>
+			
+			<input type="radio" name="genero" id="naobinario" value="NB">
+			<label for="naobinario">Não-binário</label><br>
+
+			<br>
+
+			<label for=""><h4>Endereço:</h4></label>
+			<label for="rua">Rua</label>
+			<input type="text" name="rua" placeholder="Rua, Nº, Bairro"><br>
+			
+			<label for="cep">CEP</label>
+			<input type="text" name="cep" placeholder="99999-999"><br>
+
+			<label for="cidade">Cidade</label>
+			<input type="text" name="cidade"><br>
+
+			<label for="estado">Estado</label>
+			<input type="text" name="estado" placeholder="XX"> <br>
+
+
+			<label for=""><h4>Contato:</h4></label>
+			<label for="email">Email</label>
+			<input type="email" name="email"><br>
+
+			<label for="telefone">Telefone</label>
+			<input type="text" name="telefone" placeholder="(xx) xxxxx-xxxx"><br>
+
+			<label for="skype">Skype</label>
+			<input type="text" name="skype"><br>
+
+
+			<label for="face">Facebook</label>
+			<input type="text" name="face"><br>
+
+
+			<br><label for="contato">Contato Preferencial</label><br>
+			<input type="radio" name="contato" id="whats" value="1">
+			<label for="whats">Whatsapp / Telegram</label><br>
+
+			<input type="radio" name="contato" id="email" value="2">
+			<label for="email">Email</label><br>
+
+			<input type="radio" name="contato" id="tel" value="3">
+			<label for="tel">Telefone</label><br>
+
+			<input type="radio" name="contato" id="sky" value="4">
+			<label for="sky">Skype</label><br>
+
+			
+			<br><br>
+
+			<!-- para o radio ser mutuamente exclusivo, eles precisam ter o mesmo nome -->
+			
+
+			<label for=""><h4>Áreas de Interesse:</h4></label>
+			<input type="checkbox" name="area" id="web">
+			<label for="web">Web</label><br>
+
+			<input type="checkbox" name="area" id="bd">
+			<label for="bd">Banco de Dados</label><br>	
+
+			<input type="checkbox" name="area" id="redes">
+			<label for="redes">Redes</label><br>
+
+			<input type="checkbox" name="area" id="otm">
+			<label for="otm">Otimização</label><br>
+
+			
+
+			<br><br>
+			<label for=""><h4>Dados Cadastrais</h4></label>
+			<label for="usuario">Usuario</label>
+			<input type="text" name="usuario"> <br>
+
+			<label for="senha">Senha</label>
+			<input type="password" name="senha"> <br>
+
+
+			<br><br>
+			<input type="submit" class="botao" name="confirmar" value="Cadastrar">
+			<input type="reset" name="limpar" value="Limpar">
+		</form>
+</body>
+</html>
