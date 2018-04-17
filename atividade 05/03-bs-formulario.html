@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BS - Formulários</title>
+
+    <link rel="stylesheet" href="./bootstrap3/css/bootstrap.css">
+
+  </head>
+  <body>
+
+    <table width="90%">
+  <tr>
+  <!-- a parte 'target="-blank' é para abrir o link em uma nova aba -->
+  <td><img src="imagem/icea.jpg" width="50%"></td>
+  <td align="right"><a href="http://www.ufop.br" target="_blank"> Site da UFOP |</a>
+  <a href="03-bs-formulario.html">Cadastro |</a>
+  <a href="04-bs-tabela.html">Listar |</a>
+  <a href="01-principal.html">Home</a></td>
+  </tr>
+  </table>
+  <br />
+
+    <!-- GRID //-->
+    <div class="row">
+
+    <div class="col-md-4">
+    </div>
+
+    <div class="col-md-6">
+    <form action="" method="post" class="">
+
+      <div class="form-group">
+        <label for=""><h4>Dados Pessoais:</h4></label><br>
+        <label class="control-label col-sm-2" for="nome">Nome</label>
+        <input type="text" name="nome" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="endereco">Endereço</label>
+          <input type="text" name="endereco" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cpf">CPF</label>
+        <input type="text" name="cpf" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="nasc">Data de Nasc.</label>
+        <input type="date" name="nasc" class="form-control">
+      </div>
+
+
+      <div class="radio">
+        <label class="control-label col-sm-2" for=""><strong>Gênero</strong></label><br>
+        <label><input type="radio" name="genero" value="F">Feminino</label>
+      </div>
+
+      <div class="radio">
+        <label><input type="radio" name="genero" value="M">Masculino</label>
+      </div>
+
+      <div class="radio">
+        <label><input type="radio" name="genero" value="N">Não binário</label>
+      </div>
+
+      <br>
+      <div class="form-group">
+        <label for=""><h4>Endereço:</h4></label><br>
+        <label class="control-label col-sm-2" for="rua">Rua</label>
+        <input type="text" name="rua" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="cep">CEP</label>
+        <input type="text" name="cep" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <select name="cidade" class="form-control">
+          <option value="0">SELECIONE</option>>
+          <option value="1">João Monlevade</option>
+          <option value="2">Itabira</option>
+          <option value="3">Santa Bárbara</option>
+          <option value="4">Belo Horizonte</option>
+          <option value="5">Itaúna</option>
+          <option value="10">Outra</option>
+        </select>
+      </div>
+
+       <br>
+      <div class="form-group">
+        <label for=""><h4>Contato:</h4></label><br>
+        <label class="control-label col-sm-2" for="email">Email</label>
+        <input type="text" name="email" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="tel">Telefone</label>
+        <input type="text" name="tel" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="skype">Skype</label>
+        <input type="text" name="skype" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="face">Facebook</label>
+        <input type="text" name="face" class="form-control">
+      </div>
+
+      <label class="control-label col-sm-2" for=""><strong>Contato Preferencial</strong></label><br><br>
+      <div class="radio">
+        <label><input type="radio" name="preferencial" value="1"> Telefone</label>
+      </div>
+
+      <div class="radio">
+        <label><input type="radio" name="preferencial" value="2"> Whatsapp</label>
+      </div>
+
+      <div class="radio">
+        <label><input type="radio" name="preferencial" value="3"> Facebook</label>
+      </div>
+
+      <div class="radio">
+        <label><input type="radio" name="preferencial" value="4"> Email</label>
+      </div>
+
+       <br>
+      <div class="form-group">
+        <label for=""><h4>Dados Cadastrais:</h4></label><br>
+        <label class="control-label col-sm-2" for="usuer">Usuário</label>
+        <input type="text" name="user" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="senha">Senha</label>
+        <input type="password" name="senha" class="form-control">
+      </div>
+
+      <div class="button">
+        <input type="submit" name="Cadastrar">
+        <input type="reset" name="Limpar">
+      </div>
+ <br><br>
+
+    </form>
+  </div>
+
+    <div class="col-md-2">
+
+    </div>
+
+  </div>
+
+
+
+
+
+  </body>
+</html>
