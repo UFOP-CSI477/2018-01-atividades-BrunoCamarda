@@ -1,0 +1,30 @@
+section#intro {
+	background: #fff url(./imagens/banner2.png) 50% 0 no-repeat;
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:0;
+	padding: 120px 0 200px;
+
+}
+
+table.destaque {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td.destaque, th.destaque {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+tr.destaque:nth-child(even){background-color: #f2f2f2;}
+
+th.destaque {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
