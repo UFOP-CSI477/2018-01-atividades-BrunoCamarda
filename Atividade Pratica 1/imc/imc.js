@@ -1,5 +1,3 @@
-peso = 0;
-altura = 0;
 
 $(document).ready(function(){ 
 	$("input[name='alt']").keyup(function(){
@@ -15,9 +13,7 @@ $(document).ready(function(){
       $("#alertaV1").hide();
 
       if (!isNaN(peso)){ 
-        resultado = parseInt(peso) / ((parseInt(altura) * parseInt(altura)) * 0.0001);
-        resultado = resultado.toFixed(1);
-        console.log("resultado", resultado);
+          fazCalculo();
       }
    });
 
@@ -33,18 +29,7 @@ $(document).ready(function(){
       $("#grupoV2").removeClass("has-error");
       $("#alertaV2").hide();
         if (!isNaN(altura)){
-          resultado = parseInt(peso) / ((parseInt(altura) * parseInt(altura)) * 0.0001);
-          resultado = resultado.toFixed(1);
-          ideal = 21.75 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
-          ideal = ideal.toFixed(2);
-          idealMin = 18.5 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
-          idealMax = 25 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
-          idealMax = idealMax.toFixed(2);
-          idealMin = idealMin.toFixed(2);
-          $("img[id='peso-img']").attr("src", imagemCorreta(resultado));
-          $("h2").html(resultado);
-          $("h4 span").html(ideal + " kg ( " + idealMin + "kg - " + idealMax + "kg )");
-          $("div[id='mostra-resultado']").show();
+          fazCalculo();
         }
    });
 
@@ -83,4 +68,19 @@ function imagemCorreta(resultado){
     return "./imagens/morbida.png";
 	} 
 	return null;
+}
+
+function fazCalculo(){
+  resultado = parseInt(peso) / ((parseInt(altura) * parseInt(altura)) * 0.0001);
+  resultado = resultado.toFixed(1);
+  ideal = 21.75 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
+  ideal = ideal.toFixed(2);
+  idealMin = 18.5 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
+  idealMax = 25 * ((parseInt(altura) * parseInt(altura)) * 0.0001);
+  idealMax = idealMax.toFixed(2);
+  idealMin = idealMin.toFixed(2);
+  $("img[id='peso-img']").attr("src", imagemCorreta(resultado));
+  $("h2").html(resultado);
+  $("h4 span").html(ideal + " kg ( " + idealMin + "kg - " + idealMax + "kg )");
+  $("div[id='mostra-resultado']").show();
 }
