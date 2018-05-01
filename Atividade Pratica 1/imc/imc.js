@@ -54,16 +54,16 @@ function imagemCorreta(resultado){
 	} else if (resultado > 18.5 && resultado < 25.0){ 
 		$("h5").html("Peso saudável");
     return "./imagens/normal.png";
-	} else if (resultado > 25.0 && resultado < 30.0){ 
+	} else if (resultado >= 25.0 && resultado < 30.0){ 
 		$("h5").html("Sobrepeso");
     return "./imagens/sobre.png";
-	} else if (resultado > 30.0 && resultado < 35.0){
+	} else if (resultado >= 30.0 && resultado < 35.0){
     $("h5").html("Obesidade grau 1");
     return "./imagens/obesidade.png";
-	} else if (resultado > 35.0 && resultado < 40.0 ){ 
+	} else if (resultado >= 35.0 && resultado < 40.0 ){ 
     $("h5").html("Obesidade grau 2");
     return "./imagens/obesidade.png";
-  }else if(resultado > 40.0){
+  }else if(resultado >= 40.0){
 		$("h5").html("Obesidade Mórbida (Grau 3)");
     return "./imagens/morbida.png";
 	} 
